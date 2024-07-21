@@ -1,0 +1,20 @@
+[package]
+name = "rsa_example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rsa = "0.5.0"
+rand = "0.8.3"
+sha2 = "0.10.2"
+base64 = "0.13.0"
+
+[[bin]]
+name = "encrypt"
+path = "src/main_encrypt.rs"
+
+[[bin]]
+name = "sign"
+path = "src/main_sign.rs"
